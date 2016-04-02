@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Basic multipager</title>
+		<title>Kibango kennel</title>
 		<?php wp_head(); ?>
 	</head>
 
