@@ -7,4 +7,8 @@
 	</head>
 
 	<body>
-	<?php wp_nav_menu(array('theme_location'=> 'primary')); ?>
+	<header>
+		<?php //include('bxslider-page.php'); ?>
+		<?php include( get_template_directory() . '/bxslider-page.php'); ?>
+		<?php wp_nav_menu(array('theme_location'=> 'primary')); ?>
+	</header>
