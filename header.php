@@ -10,5 +10,8 @@
 	<header>
 		<?php //include('bxslider-page.php'); ?>
 		<?php include( get_template_directory() . '/bxslider-page.php'); ?>
-		<?php wp_nav_menu(array('theme_location'=> 'primary')); ?>
+		<div class="container">
+			<div class="header-logo col-sm-4"><a href="/home"><img src="<?php echo get_template_directory_uri() . '/images/kibango-logo.png'?>"></a></div>
+			<?php wp_nav_menu(array('theme_location'=> 'primary', 'container_class' => 'menu-main-navigation-container col-sm-8')); ?>
+		</div>
 	</header>
