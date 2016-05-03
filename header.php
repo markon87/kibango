@@ -10,8 +10,10 @@
 	<header>
 		<?php //include('bxslider-page.php'); ?>
 		<?php include( get_template_directory() . '/bxslider-page.php'); ?>
-		<div class="container">
-			<div class="header-logo col-sm-4"><a href="/home"><img src="<?php echo get_template_directory_uri() . '/images/kibango-logo.png'?>"></a></div>
-			<?php wp_nav_menu(array('theme_location'=> 'primary', 'container_class' => 'menu-main-navigation-container col-sm-8')); ?>
+		<div class="container navigation-container">
+			<div class="header-logo col-xs-2"><a href="<?php echo home_url();?>"><img src="<?php echo get_template_directory_uri() . '/images/kibango-logo.png'?>"></a></div>
+			<i class="fa fa-bars" aria-hidden="true"></i>
+			<div class="overlay"></div>
+			<?php wp_nav_menu(array('theme_location'=> 'primary', 'container_class' => 'menu-main-navigation-container col-md-10')); ?>
 		</div>
 	</header>

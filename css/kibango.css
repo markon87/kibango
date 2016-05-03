@@ -28,9 +28,12 @@ header .container {
 }
 
 /*** NAVIGATION ***/
+.fa.fa-bars{display: none;}
+.navigation-container .overlay{display: none;}
 .menu-main-navigation-container ul li{list-style: none; display: inline-block; margin: 0 15px 0 0;}
 .header-logo, .menu-main-navigation-container {display: inline-block;}
-.menu-main-navigation-container {margin-top: 15px;}
+.menu-main-navigation-container {margin-top: 15px; }
+.menu-main-navigation-container ul{padding: 0;}
 .menu-main-navigation-container ul li a {
     padding: 20px 7px 6px;
     color: #fff;
@@ -46,6 +49,17 @@ header .container {
     margin-top: -48px;
     z-index: 2;
 }
+@media screen and (max-width: 960px) {
+    .fa.fa-bars{display: block; float: right; right: 25px; margin: 15px 0; font-size: 2.5rem; z-index: 9999; position: relative;}
+    .fa.fa-bars:hover{cursor: pointer;}
+    .menu-main-navigation-container {display: none;}
+    .navigation-container.open .menu-main-navigation-container{display: block; position: absolute; left: 0; top: 0; background-color: #455A64; z-index: 9999;}
+    .navigation-container.open .menu-main-navigation-container ul li{display: block; border: none; margin: 15px 0;}
+    .navigation-container.open .overlay{display: block; position: absolute; background: rgba(0, 0, 0, 0.7); width: 100%; height: 100%; z-index: 1000; top: 0; left: 0;}
+}
+
+
+
 
 /*** BX SLIDER ***/
 .bx-viewport{position: static !important; border: none !important; box-shadow:none !important;}
@@ -53,6 +67,7 @@ header .container {
 .bx-wrapper img {
     margin: 0 auto;
 }
+.bx-wrapper .bx-controls-direction a{z-index: 1000;}
 
 /*** CONTENT ***/
 .content-wrapper{padding: 50px 0 30px 0;}
@@ -65,10 +80,7 @@ footer li{list-style: none;}
 .footer-title-logo img {float: right; width: 55px;}
 .footer-address a{display: block;}
 .footer-address p{margin: 0;}
-.footer-icon.fb-icon{
-    background-image: url("../images/fb-icon.png");
-    padding: 7.5px 17px;
-}
+.footer-icon.fb-icon{font-size: 2.5rem; color: #fff;}
 .social-links h3{margin-bottom: 22px;}
 iframe{width: 100%;}
 .copyright{padding-bottom: 0; padding-top: 10px;}
@@ -88,4 +100,12 @@ footer {
     bottom: 0;
     height: 200px;
     width: 100%;
+}
+@media screen and (max-width: 960px) {
+    body {
+        margin: 0 0 370px; /* bottom = footer height */
+    }
+    footer {
+        height: 370px;
+    }
 }

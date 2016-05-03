@@ -9,4 +9,11 @@ $(document).ready(function() {
 		   adaptiveHeight: true,
 		   speed: 900
 		});
+
+	 $(".fa.fa-bars").on("click", function(){
+	 	$(".navigation-container").toggleClass("open");
+	 });
+	 $(".overlay").on("click", function(){
+	 	$(".navigation-container").removeClass("open");
+	 });
 });

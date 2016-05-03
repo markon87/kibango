@@ -2,6 +2,7 @@
 	
 function kibango_script_enqueue() {
 	wp_enqueue_style('bootstrapcss', get_template_directory_uri().'/css/bootstrap.min.css', array(), '1.0.0', 'all');
+	wp_enqueue_style('fontawesomecss', get_template_directory_uri().'/css/font-awesome.css', array(), '1.0.0', 'all');
 	wp_enqueue_style('bxslidercss', get_template_directory_uri().'/css/jquery.bxslider.css', array(), '1.0.0', 'all');
 	wp_enqueue_style('fancyboxcss', get_template_directory_uri().'/css/jquery.fancybox.css', array(), '1.0.0', 'all');
 	wp_enqueue_style('customstyle', get_template_directory_uri().'/css/kibango.css', array(), '1.0.0', 'all');
