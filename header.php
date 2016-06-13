@@ -6,7 +6,7 @@
 		<?php wp_head(); ?>
 	</head>
 
-	<body>
+	<body <?php body_class(); ?>>
 	<header>
 		<?php //include('bxslider-page.php'); ?>
 		<?php include( get_template_directory() . '/bxslider-page.php'); ?>

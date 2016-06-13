@@ -12,6 +12,44 @@ body{
 img{
 	width: 100%;
 }
+main a:hover{text-decoration: none;}
+main .breadcrumb a:hover{text-decoration: underline;}
+.toTop{
+    width: 50px;
+    height: 50px;
+    background-color: #455A64;
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    color: #fff;
+    padding: 14px 12px;
+    border: 1px solid #fff;
+}
+.toTop:hover{
+    cursor: pointer;
+}
+.page-title h1{
+    text-transform: uppercase;
+    border-bottom: 1px solid #0EA5A4;
+    width: 250px;
+}
+.litter .page-title h1{
+    width: 450px;
+}
+.friends-associates .page-title h1{
+    width: 460px;
+}
+.page-title h2 {
+    border-bottom: 1px solid #0EA5A4;
+    margin: 25px 15px 15px;
+    text-transform: uppercase;
+}
+.news h3, .shows h3 {
+    border-bottom: 1px solid #0ea5a4;
+}
+.news img, .shows img{
+    margin-bottom: 10px;
+}
 
 /*** HEADER ***/
 header {
@@ -75,6 +113,11 @@ header .container {
 
 /*** CONTENT ***/
 .content-wrapper{padding: 50px 35px 30px 35px; background: url('../images/transparent-bg.png');}
+.page-title h1 {
+    text-transform: uppercase;
+    border-bottom: 1px solid #0EA5A4;
+    width: 280px;
+}
 
 
 /*** INTRO & HOME PAGE ***/
@@ -93,6 +136,7 @@ header .container {
     margin: 15px;
     width: 60px;
 }
+.home .page-title{display: none;}
 
 /*** OUR DOGS ***/
 .our-dogs-gender {
@@ -169,6 +213,8 @@ header .container {
 }
 .dog-mini-gallery img{border: 3px solid #333;}
 .males .row.male-row{margin-bottom: 30px;}
+.our-dogs-block p:last-child{margin: 0;}
+.our-dogs-block a{text-decoration: none;}
 
 /*** PLANNED LITTERS ***/
 .planned-litters .page-title h1 {
@@ -187,6 +233,49 @@ header .container {
 }
 
 
+/*** FRIENDS & ASSOCIATES ***/
+.friends-associates .container{
+    min-height: 768px;
+}
+.friends-associates-name {
+    background: url('../images/transparent-blue.png'); 
+    color: #fff;
+    font-size: 16px;
+    margin-top: -20px;
+    padding-left: 15px;
+    position: relative;
+    text-transform: uppercase;
+}
+.btn.friends-btn {
+    background-color: #455a64;
+    border: 1px solid #455a64;
+    border-radius: 0;
+    color: #fff;
+    margin: 8px 0;
+    width: 100%;
+}
+.btn.friends-btn:hover {
+    background-color: #fff;
+    border: 1px solid #455a64;
+    color: #455a64;
+}
+.friends-associates ul {
+    min-height: 140px;
+}
+
+/*** GALLERY ***/
+.gallery-dog img{
+    margin-bottom: 15px;
+}
+
+
+/*** CONTACT ***/
+.contact-content {
+    width: 500px;
+    margin: 50px auto 0;
+    text-align: center;
+    min-height: 768px;
+}
 
 /*** FOOTER ***/
 footer{background-color: #455A64; color: #fff;}
