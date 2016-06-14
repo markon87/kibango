@@ -16,4 +16,20 @@ $(document).ready(function() {
 	 $(".overlay").on("click", function(){
 	 	$(".navigation-container").removeClass("open");
 	 });
+
+	   /////////  NAVIGATION BUTTONS /////////////////////////////
+	var	tmp = $("html,body")
+
+	$("#top_button").click(function() {
+	    tmp.animate({
+	        scrollTop: $("#top").offset().top
+	    }, 1000);
+	});
+	$("#kontakt_button").click(function() {
+	    tmp.animate({
+	        scrollTop: $("#contact").offset().top
+	    }, 1000);
+	});
+
+	
 });

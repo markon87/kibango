@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-
+	<div class="toTop"><a id="top_button">Top</a></div>
 	<div class="container content-wrapper">
 	<?php 
 		if(have_posts()):
@@ -11,6 +11,7 @@
 			
 	?>
 	</div>
+
 	
 <?php get_footer(); ?>
 
