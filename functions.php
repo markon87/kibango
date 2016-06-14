@@ -24,7 +24,21 @@ function kibango_theme_setup(){
 add_action('init', 'kibango_theme_setup');
 
 /*
+==============================================
+	Set body class depending on language 
+==============================================
+*/
+add_filter('body_class', 'my_custom_body_class', 10, 2);
+  function my_custom_body_class($classes) {
+    $classes[] = get_bloginfo('language');
+    return $classes;
+  }
+
+
+/*
+==============================================
 Sidebar Function
+==============================================
 */
 function widget_setup(){
 	
